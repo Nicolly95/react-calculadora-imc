@@ -1,0 +1,168 @@
+
+.headerContainer {
+    max-width: 900px;
+    margin: 60px auto 30px auto;
+}
+.logo {
+    cursor: pointer;
+}
+.container {
+    display: flex;
+    max-width: 900px;
+    margin: auto;
+    padding-bottom: 50px;
+}
+.container .leftSide {
+    
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 40px;
+    
+}
+.container .leftSide h1 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: #3A4B5C;
+}
+.container .leftSide p {
+    font-size: 16px;
+    color: #6A7D8B;
+}
+.container .leftSide button {
+    background-color: #227C9D;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    padding: 15px 0px;
+    margin-top: 40px;
+    width: 100%;
+    transition: all ease 0.3s;
+}
+.container .leftSide button:disabled,
+.container .leftSide button:disabled:hover {
+    transition: none;
+    opacity: 0.5;
+}
+.container .leftSide button:hover {
+    opacity: 0.8;
+    transition: all ease 0.3s;
+}
+.container .leftSide .containerInputs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+.container .leftSide .containerInputs input{
+    border: 2px solid rgba(105, 143, 167, 0.603);
+    border-radius: 5px;
+    padding: 6px 8px;
+    outline: none;
+}
+.container .leftSide .containerInputs input:disabled {
+    opacity: 0.5;
+}
+.container .leftSide .containerInputs input::placeholder{
+    font-size: 14px;
+}
+
+.container .rightSide {
+    flex: 1;
+    margin-left: 40px;
+    display: flex;
+}
+.container .rightSide .grid{
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.container .rightSide .rightBig {
+    flex: 1;
+    display: flex;
+}
+.container .rightSide .rightArrow {
+    position: absolute;
+    background-color: #227C9D;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: -35px;
+    margin-top: 145px;
+    transition: all ease 0.3s;
+}
+.container .rightSide .rightArrow:hover {
+    background-color: #1a627c;
+    opacity: 0.9;
+    transition: all ease 0.3s;
+}
+
+/* Chrome, Edge, Safari */
+.container .leftSide .containerInputs input::-webkit-inner-spin-button,
+.container .leftSide .containerInputs input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.container .leftSide .containerInputs input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+
+
+
+@media (max-width: 770px) {
+    .main {
+        padding: 0px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .container .rightSide {
+        margin-left: 0px;
+    }
+    .container .leftSide {
+        margin-right: 0px;
+        margin-bottom: 40px;
+    }
+    .container .rightSide .rightArrow {
+        margin-left: 0px;
+        margin-top: 0px;
+        border-radius: 10px;
+    }
+}
+@media (max-width: 430px) {
+    .container .rightSide .grid{    
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
