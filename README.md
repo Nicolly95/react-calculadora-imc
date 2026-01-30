@@ -25,18 +25,9 @@ TypeScript
 CSS Modules
 JavaScript (ES6+)
 
-📦 Como rodar o projeto localmente:
-Clone o repositório
-git clone https://github.com/Nicolly95/react-calculadora-imc.git
 
-Acesse a pasta do projeto
-cd react-calculadora-imc
-
-Instale as dependências
-npm install
-
-Inicie o servidor de desenvolvimento
 npm start
+
 
 
 
